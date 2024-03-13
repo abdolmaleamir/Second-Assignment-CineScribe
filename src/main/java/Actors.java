@@ -13,9 +13,9 @@ public class Actors {
     String dateOfDeath;
 
     public Actors(String netWorth, boolean isAlive) { //in constructor, I  added some input validation for the netWorth parameter.
-                                                      // The replaceAll method is used to remove any non-numeric characters
-                                                      //(except for the decimal point) from the netWorth string before parsing it as a Double.
-                                                      // This ensures that only numeric values are assigned to the netWorth attribute.
+        // The replaceAll method is used to remove any non-numeric characters
+        //(except for the decimal point) from the netWorth string before parsing it as a Double.
+        // This ensures that only numeric values are assigned to the netWorth attribute.
         if (netWorth != null && !netWorth.isEmpty()) {
             this.netWorth = Double.parseDouble(netWorth.replaceAll("[^0-9.]", ""));
         }
